@@ -1,0 +1,109 @@
+\documentclass[a4paper,10pt]{article}
+
+%---------- Packages ----------
+\usepackage[a4paper,margin=1.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{everypage}
+
+%---------- Link color ----------
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black
+}
+
+%---------- Full Page Border ----------
+\AddEverypageHook{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[line width=2pt, color=black]
+      ([xshift=1cm,yshift=-1cm]current page.north west)
+      rectangle
+      ([xshift=-1cm,yshift=1cm]current page.south east);
+  \end{tikzpicture}%
+}
+
+%---------- Section Style ----------
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{-4pt}\hrule\vspace{-4pt}]
+
+%---------- Document ----------
+\begin{document}
+\small
+
+%---------- Header: Name + Contact Details + Right Image ----------
+\begin{minipage}[t]{0.72\textwidth}
+  {\LARGE \textbf{Pushpalatha KN}} \\[2pt]
+  \faPhone\ +91 8618253178\quad | \quad
+  \faEnvelope\ \href{mailto:shivrajbindu55@gmail.com}{pushpakn35@gmail.com} \\[1pt]
+  \faMapMarker*\ kagimadu, kudur (H),magadi(T),ramanagara(D) \\
+  \faGithub\ \href{https://github.com/shivrajbindu}{github.com/pushpaka35} \quad | \quad
+  \faLinkedin\ \href{https://linkedin.com/in/yourprofile}{linkedin.com/in/yourprofile}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+  \raggedleft
+  \includegraphics[width=3cm,clip,keepaspectratio]{yourimage.jpg} % Replace with your image
+\end{minipage}
+
+\vspace{5pt}
+\hrule
+\vspace{6pt}
+
+%---------- Personal Info ----------
+\section*{Personal Information}
+\begin{tabular}{@{} p{4cm} p{10cm} @{}}
+\textbf{Father's Name:} & Narasimharaju \\
+\textbf{Date of Birth:} & 13 July 2005 \\
+\textbf{Languages Known:} & Kannada, English, \\
+\end{tabular}
+
+%---------- Career Objective ----------
+\section*{Career Objective}
+Motivated BCA fresher seeking an entry-level software development role to apply programming and analytical skills for organizational growth.
+
+%---------- Education ----------
+\section*{Education}
+\begin{tabular}{@{} p{3.5cm} p{6cm} p{3cm} p{2cm} @{}}
+\textbf{Course} & \textbf{Institute} & \textbf{Year} & \textbf{Percentage/CGPA} \\
+BCA & Seshadripuram College, Tumkur & 2023–2026 & 7.63 CGPA \\
+PUC & Karnataka Public School, Kudur & 2022–2023& 62.17\% \\
+SSLC & Karnataka Public School, Kudur & 2021 & 74.88\% \\
+\end{tabular}
+
+%---------- Skills ----------
+\section*{Technical Skills}
+\begin{tabular}{@{} p{4cm} p{10cm} @{}}
+\textbf{Languages:} & C,Java, Python \\
+\textbf{Web:} & HTML, CSS, 
+\end{tabular}
+
+%---------- Certificates ----------
+\section*{Certificates}
+\begin{itemize}[leftmargin=*]
+  \item R Programming – Simplilearn
+  \item Database and SQL – Infosys Springboard
+\end{itemize}
+
+%---------- Hobbies ----------
+\section*{Hobbies}
+Pencil sketching, Reading books, Playing carrom and Badminton.
+
+%---------- Declaration ----------
+\section*{Declaration}
+I hereby declare that the above information is true to the best of my knowledge and belief.
+
+\vspace{6pt}
+\noindent
+\textbf{Place:} kagimadu \\
+\textbf{Date:} \today
+
+\vspace{6pt}
+\begin{flushright}
+\textbf{(Pushpalatha KN)}
+\end{flushright}
+
+\end{document}
